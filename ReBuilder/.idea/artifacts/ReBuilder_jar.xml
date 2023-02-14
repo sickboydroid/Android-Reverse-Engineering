@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ReBuilder:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ReBuilder_jar</output-path>
+    <root id="archive" name="ReBuilder.jar">
+      <element id="module-output" name="ReBuilder" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/info/picocli/picocli/4.7.1/picocli-4.7.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
