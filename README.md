@@ -1,6 +1,6 @@
 # Android Reverse Engineering Tools
 
-Buy me a coffee: COMMING SOON!
+Buy me a coffee: [patreon.com/sickboydroid](https://www.patreon.com/sickboydroid)
 
 - Limitations:
   - Currently works only on gnu-linux systems. I will look into expanding once I get time
