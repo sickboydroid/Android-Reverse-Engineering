@@ -1,0 +1,541 @@
+diff --color -ur classes/androidx/appcompat/widget/g1.smali classes-org/androidx/appcompat/widget/g1.smali
+--- classes/androidx/appcompat/widget/g1.smali	2023-04-16 21:30:46.686406465 +0530
++++ classes-org/androidx/appcompat/widget/g1.smali	2023-04-18 22:42:52.521111250 +0530
+@@ -4,7 +4,7 @@
+ 
+ 
+ # static fields
+-.field private static c:Z
++.field private static c:Z = false
+ 
+ 
+ # instance fields
+diff --color -ur classes/b/h/e/f.smali classes-org/b/h/e/f.smali
+--- classes/b/h/e/f.smali	2023-04-16 21:30:47.076406416 +0530
++++ classes-org/b/h/e/f.smali	2023-04-18 22:42:53.011111179 +0530
+@@ -4,7 +4,7 @@
+ 
+ 
+ # static fields
+-.field private static b:Ljava/lang/Class;
++.field private static b:Ljava/lang/Class; = null
+     .annotation system Ldalvik/annotation/Signature;
+         value = {
+             "Ljava/lang/Class<",
+@@ -13,7 +13,7 @@
+     .end annotation
+ .end field
+ 
+-.field private static c:Ljava/lang/reflect/Constructor;
++.field private static c:Ljava/lang/reflect/Constructor; = null
+     .annotation system Ldalvik/annotation/Signature;
+         value = {
+             "Ljava/lang/reflect/Constructor<",
+@@ -22,11 +22,11 @@
+     .end annotation
+ .end field
+ 
+-.field private static d:Ljava/lang/reflect/Method;
++.field private static d:Ljava/lang/reflect/Method; = null
+ 
+-.field private static e:Ljava/lang/reflect/Method;
++.field private static e:Ljava/lang/reflect/Method; = null
+ 
+-.field private static f:Z
++.field private static f:Z = false
+ 
+ 
+ # direct methods
+diff --color -ur classes/b/h/m/h.smali classes-org/b/h/m/h.smali
+--- classes/b/h/m/h.smali	2023-04-16 21:30:47.096406413 +0530
++++ classes-org/b/h/m/h.smali	2023-04-18 22:42:53.031111177 +0530
+@@ -12,11 +12,11 @@
+ 
+ 
+ # static fields
+-.field private static a:Z
++.field private static a:Z = false
+ 
+-.field private static b:Ljava/lang/reflect/Method;
++.field private static b:Ljava/lang/reflect/Method; = null
+ 
+-.field private static c:Z
++.field private static c:Z = false
+ 
+ .field private static d:Ljava/lang/reflect/Field;
+ 
+diff --color -ur classes/b/h/m/i0$c.smali classes-org/b/h/m/i0$c.smali
+--- classes/b/h/m/i0$c.smali	2023-04-16 21:30:47.096406413 +0530
++++ classes-org/b/h/m/i0$c.smali	2023-04-18 22:42:53.041111176 +0530
+@@ -15,11 +15,11 @@
+ 
+ 
+ # static fields
+-.field private static e:Ljava/lang/reflect/Field;
++.field private static e:Ljava/lang/reflect/Field; = null
+ 
+-.field private static f:Z
++.field private static f:Z = false
+ 
+-.field private static g:Ljava/lang/reflect/Constructor;
++.field private static g:Ljava/lang/reflect/Constructor; = null
+     .annotation system Ldalvik/annotation/Signature;
+         value = {
+             "Ljava/lang/reflect/Constructor<",
+@@ -29,7 +29,7 @@
+     .end annotation
+ .end field
+ 
+-.field private static h:Z
++.field private static h:Z = false
+ 
+ 
+ # instance fields
+diff --color -ur classes/b/h/m/i0$g.smali classes-org/b/h/m/i0$g.smali
+--- classes/b/h/m/i0$g.smali	2023-04-16 21:30:47.106406412 +0530
++++ classes-org/b/h/m/i0$g.smali	2023-04-18 22:42:53.031111177 +0530
+@@ -15,7 +15,7 @@
+ 
+ 
+ # static fields
+-.field private static h:Z
++.field private static h:Z = false
+ 
+ .field private static i:Ljava/lang/reflect/Method;
+ 
+diff --color -ur classes/b/n/a/b.smali classes-org/b/n/a/b.smali
+--- classes/b/n/a/b.smali	2023-04-16 21:30:47.126406409 +0530
++++ classes-org/b/n/a/b.smali	2023-04-18 22:42:53.091111169 +0530
+@@ -14,7 +14,7 @@
+ 
+ 
+ # static fields
+-.field static c:Z
++.field static c:Z = false
+ 
+ 
+ # instance fields
+Only in classes/com: bosphere
+diff --color -ur classes/com/facebook/ads/AdSettings.smali classes-org/com/facebook/ads/AdSettings.smali
+--- classes/com/facebook/ads/AdSettings.smali	2023-04-16 21:30:47.256406394 +0530
++++ classes-org/com/facebook/ads/AdSettings.smali	2023-04-18 22:42:53.221111152 +0530
+@@ -16,7 +16,7 @@
+ 
+ 
+ # static fields
+-.field public static final DEBUG:Z
++.field public static final DEBUG:Z = false
+ 
+ 
+ # direct methods
+diff --color -ur classes/com/google/android/gms/common/internal/h.smali classes-org/com/google/android/gms/common/internal/h.smali
+--- classes/com/google/android/gms/common/internal/h.smali	2023-04-16 21:30:47.436406372 +0530
++++ classes-org/com/google/android/gms/common/internal/h.smali	2023-04-18 22:42:53.461111118 +0530
+@@ -8,11 +8,11 @@
+ 
+ .field private static final b:Ljava/lang/Object;
+ 
+-.field private static c:Lcom/google/android/gms/common/internal/g1;
++.field private static c:Lcom/google/android/gms/common/internal/g1; = null
+ 
+-.field static d:Landroid/os/HandlerThread;
++.field static d:Landroid/os/HandlerThread; = null
+ 
+-.field private static e:Z
++.field private static e:Z = false
+ 
+ 
+ # direct methods
+diff --color -ur classes/com/google/android/gms/internal/ads/dm0.smali classes-org/com/google/android/gms/internal/ads/dm0.smali
+--- classes/com/google/android/gms/internal/ads/dm0.smali	2023-04-16 21:30:47.606406350 +0530
++++ classes-org/com/google/android/gms/internal/ads/dm0.smali	2023-04-18 22:42:53.711111085 +0530
+@@ -6,9 +6,9 @@
+ # static fields
+ .field private static final b:Ljava/lang/Object;
+ 
+-.field private static c:Z
++.field private static c:Z = false
+ 
+-.field private static d:Z
++.field private static d:Z = false
+ 
+ .field private static final e:Lcom/google/android/gms/common/util/d;
+ 
+diff --color -ur classes/com/google/android/gms/internal/ads/fd.smali classes-org/com/google/android/gms/internal/ads/fd.smali
+--- classes/com/google/android/gms/internal/ads/fd.smali	2023-04-16 21:30:47.676406343 +0530
++++ classes-org/com/google/android/gms/internal/ads/fd.smali	2023-04-18 22:42:53.801111071 +0530
+@@ -4,7 +4,7 @@
+ 
+ 
+ # static fields
+-.field static a:Z
++.field static a:Z = false
+ 
+ .field private static b:Ljava/security/MessageDigest;
+ 
+diff --color -ur classes/com/google/android/gms/internal/ads/qe.smali classes-org/com/google/android/gms/internal/ads/qe.smali
+--- classes/com/google/android/gms/internal/ads/qe.smali	2023-04-16 21:30:48.136406286 +0530
++++ classes-org/com/google/android/gms/internal/ads/qe.smali	2023-04-18 22:42:54.421110987 +0530
+@@ -8,7 +8,7 @@
+ 
+ .field private static final B:Ljava/lang/String; = "qe"
+ 
+-.field static C:Z
++.field static C:Z = false
+ 
+ .field private static D:J
+ 
+diff --color -ur classes/com/prince/tunnel/injector/prince/ssl/WSService.smali classes-org/com/prince/tunnel/injector/prince/ssl/WSService.smali
+--- classes/com/prince/tunnel/injector/prince/ssl/WSService.smali	2023-04-16 21:30:48.586406231 +0530
++++ classes-org/com/prince/tunnel/injector/prince/ssl/WSService.smali	2023-04-18 22:42:54.981110908 +0530
+@@ -15,7 +15,7 @@
+ 
+ 
+ # static fields
+-.field public static f:Z
++.field public static f:Z = false
+ 
+ .field private static g:Ljava/net/Socket;
+ 
+diff --color -ur classes/com/prince/tunnel/injector/prince/ssl/c.smali classes-org/com/prince/tunnel/injector/prince/ssl/c.smali
+--- classes/com/prince/tunnel/injector/prince/ssl/c.smali	2023-04-16 21:30:48.596406230 +0530
++++ classes-org/com/prince/tunnel/injector/prince/ssl/c.smali	2023-04-18 22:42:54.991110907 +0530
+@@ -211,13 +211,9 @@
+ .method private static c(Landroid/content/Context;Ljava/lang/String;)Z
+     .registers 7
+ 
+-    const/4 p0, 0x1
+-
+-    return p0
+-
+     const/4 v0, 0x0
+ 
+-    :try_start_3
++    :try_start_1
+     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+ 
+     move-result-object v1
+@@ -238,19 +234,19 @@
+ 
+     const/4 v2, 0x1
+ 
+-    if-le v1, v2, :cond_18
++    if-le v1, v2, :cond_16
+ 
+     return v0
+ 
+-    :cond_18
++    :cond_16
+     iget-object p0, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
+ 
+     array-length v1, p0
+ 
+     const/4 v3, 0x0
+ 
+-    :goto_1c
+-    if-ge v3, v1, :cond_47
++    :goto_1a
++    if-ge v3, v1, :cond_45
+ 
+     aget-object v4, p0, v3
+ 
+@@ -265,19 +261,19 @@
+     invoke-virtual {p1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+ 
+     move-result v4
+-    :try_end_2c
+-    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_2c} :catch_32
++    :try_end_2a
++    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_2a} :catch_30
+ 
+-    if-eqz v4, :cond_2f
++    if-eqz v4, :cond_2d
+ 
+     return v2
+ 
+-    :cond_2f
++    :cond_2d
+     add-int/lit8 v3, v3, 0x1
+ 
+-    goto :goto_1c
++    goto :goto_1a
+ 
+-    :catch_32
++    :catch_30
+     move-exception p0
+ 
+     const-wide v1, -0x1d7d205d066L
+@@ -296,17 +292,13 @@
+ 
+     invoke-static {p1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+ 
+-    :cond_47
++    :cond_45
+     return v0
+ .end method
+ 
+ .method private static e(Landroid/content/Context;)Z
+     .registers 2
+ 
+-    const/4 p0, 0x1
+-
+-    return p0
+-
+     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+ 
+     move-result-object v0
+@@ -319,7 +311,7 @@
+ 
+     move-result-object p0
+ 
+-    if-eqz p0, :cond_1a
++    if-eqz p0, :cond_18
+ 
+     sget-object v0, Lcom/prince/tunnel/injector/prince/ssl/c;->d:Ljava/util/List;
+ 
+@@ -327,16 +319,16 @@
+ 
+     move-result p0
+ 
+-    if-eqz p0, :cond_1a
++    if-eqz p0, :cond_18
+ 
+     const/4 p0, 0x1
+ 
+-    goto :goto_1b
++    goto :goto_19
+ 
+-    :cond_1a
++    :cond_18
+     const/4 p0, 0x0
+ 
+-    :goto_1b
++    :goto_19
+     return p0
+ .end method
+ 
+@@ -345,21 +337,13 @@
+ .method public d()Ljava/lang/Boolean;
+     .registers 3
+ 
+-    new-instance v0, Ljava/lang/Boolean;
+-
+-    const/4 v1, 0x1
+-
+-    invoke-direct {v0, v1}, Ljava/lang/Boolean;-><init>(Z)V
+-
+-    return-object v0
+-
+     iget-object v0, p0, Lcom/prince/tunnel/injector/prince/ssl/c;->b:Ljava/lang/Boolean;
+ 
+     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+ 
+     move-result v0
+ 
+-    if-eqz v0, :cond_1a
++    if-eqz v0, :cond_13
+ 
+     iget-object v0, p0, Lcom/prince/tunnel/injector/prince/ssl/c;->a:Landroid/content/Context;
+ 
+@@ -367,13 +351,13 @@
+ 
+     move-result v0
+ 
+-    if-nez v0, :cond_1a
++    if-nez v0, :cond_13
+ 
+     sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+ 
+     return-object v0
+ 
+-    :cond_1a
++    :cond_13
+     iget-object v0, p0, Lcom/prince/tunnel/injector/prince/ssl/c;->a:Landroid/content/Context;
+ 
+     iget-object v1, p0, Lcom/prince/tunnel/injector/prince/ssl/c;->c:Ljava/lang/String;
+Only in classes/com: tangledbytes
+diff --color -ur classes/net/openvpn/openvpn/AppOpenManager.smali classes-org/net/openvpn/openvpn/AppOpenManager.smali
+--- classes/net/openvpn/openvpn/AppOpenManager.smali	2023-04-16 21:30:48.596406230 +0530
++++ classes-org/net/openvpn/openvpn/AppOpenManager.smali	2023-04-18 22:42:55.001110905 +0530
+@@ -10,7 +10,7 @@
+ # static fields
+ .field private static final LOG_TAG:Ljava/lang/String; = "AppOpenManager"
+ 
+-.field private static isShowingAd:Z
++.field private static isShowingAd:Z = false
+ 
+ 
+ # instance fields
+diff --color -ur classes/net/openvpn/openvpn/OpenVPNApplication.smali classes-org/net/openvpn/openvpn/OpenVPNApplication.smali
+--- classes/net/openvpn/openvpn/OpenVPNApplication.smali	2023-04-16 21:30:48.616406227 +0530
++++ classes-org/net/openvpn/openvpn/OpenVPNApplication.smali	2023-04-18 22:42:55.021110904 +0530
+@@ -39,8 +39,6 @@
+ 
+     invoke-super {p0}, Landroid/app/Application;->onCreate()V
+ 
+-    invoke-static {p0}, Lcom/tangledbytes/androidrelib/Init;->init(Landroid/content/Context;)V
+-
+     new-instance v0, Lnet/openvpn/openvpn/OpenVPNApplication$1;
+ 
+     invoke-direct {v0, p0}, Lnet/openvpn/openvpn/OpenVPNApplication$1;-><init>(Lnet/openvpn/openvpn/OpenVPNApplication;)V
+diff --color -ur classes/net/openvpn/openvpn/OpenVPNClient.smali classes-org/net/openvpn/openvpn/OpenVPNClient.smali
+--- classes/net/openvpn/openvpn/OpenVPNClient.smali	2023-04-18 22:33:21.771181571 +0530
++++ classes-org/net/openvpn/openvpn/OpenVPNClient.smali	2023-04-18 22:42:55.081110893 +0530
+@@ -4865,9 +4865,6 @@
+ 
+ .method private showTelegram()V
+     .registers 4
+-    
+-### Return to stop showing telegram dialog
+-    return-void
+ 
+     new-instance v0, Landroid/app/AlertDialog$Builder;
+ 
+@@ -7760,12 +7757,11 @@
+ .method public onBackPressed()V
+     .registers 2
+ 
+-### prevent from hacking recnet
+-    #iget-boolean v0, p0, Lnet/openvpn/openvpn/OpenVPNClient;->disallowBackpress:Z
++    iget-boolean v0, p0, Lnet/openvpn/openvpn/OpenVPNClient;->disallowBackpress:Z
+ 
+-    #if-eqz v0, :cond_5
++    if-eqz v0, :cond_5
+ 
+-    #goto :goto_8
++    goto :goto_8
+ 
+     :cond_5
+     invoke-super {p0}, Landroid/app/Activity;->onBackPressed()V
+@@ -8619,7 +8615,7 @@
+ 
+     iput-object v4, p0, Lnet/openvpn/openvpn/OpenVPNClient;->bytes_out:Landroid/widget/TextView;
+ 
+-    #invoke-virtual {p0, v0}, Lnet/openvpn/openvpn/OpenVPNClient;->linkUp(Z)V
++    invoke-virtual {p0, v0}, Lnet/openvpn/openvpn/OpenVPNClient;->linkUp(Z)V
+ 
+     new-instance v0, Ljava/lang/StringBuilder;
+ 
+@@ -9440,30 +9436,29 @@
+ .method protected onPause()V
+     .registers 4
+ 
+-### Prevent hacking recent button
+-    #iget-boolean v0, p0, Lnet/openvpn/openvpn/OpenVPNClient;->disallowBackpress:Z
++    iget-boolean v0, p0, Lnet/openvpn/openvpn/OpenVPNClient;->disallowBackpress:Z
+ 
+-    #if-eqz v0, :cond_18
++    if-eqz v0, :cond_18
+ 
+-    #invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
++    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+ 
+-    #move-result-object v0
++    move-result-object v0
+ 
+-    #const-string v1, "activity"
++    const-string v1, "activity"
+ 
+-    #invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
++    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+ 
+-    #move-result-object v0
++    move-result-object v0
+ 
+-    #check-cast v0, Landroid/app/ActivityManager;
++    check-cast v0, Landroid/app/ActivityManager;
+ 
+-    #invoke-virtual {p0}, Landroid/app/Activity;->getTaskId()I
++    invoke-virtual {p0}, Landroid/app/Activity;->getTaskId()I
+ 
+-    #move-result v1
++    move-result v1
+ 
+-    #const/4 v2, 0x0
++    const/4 v2, 0x0
+ 
+-    #invoke-virtual {v0, v1, v2}, Landroid/app/ActivityManager;->moveTaskToFront(II)V
++    invoke-virtual {v0, v1, v2}, Landroid/app/ActivityManager;->moveTaskToFront(II)V
+ 
+     :cond_18
+     invoke-super {p0}, Landroid/app/Activity;->onPause()V
+@@ -9815,7 +9810,7 @@
+ 
+     const/4 v0, 0x1
+ 
+-    #invoke-virtual {p0, v0}, Lnet/openvpn/openvpn/OpenVPNClient;->linkUp(Z)V
++    invoke-virtual {p0, v0}, Lnet/openvpn/openvpn/OpenVPNClient;->linkUp(Z)V
+ 
+     iget-object v0, p0, Lnet/openvpn/openvpn/OpenVPNClient;->adView:Lcom/google/android/gms/ads/AdView;
+ 
+@@ -9943,30 +9938,30 @@
+ 
+ .method protected onUserLeaveHint()V
+     .registers 4
+-### Prevent from hacking recent button
+-    #iget-boolean v0, p0, Lnet/openvpn/openvpn/OpenVPNClient;->disallowBackpress:Z
+ 
+-    #if-eqz v0, :cond_18
++    iget-boolean v0, p0, Lnet/openvpn/openvpn/OpenVPNClient;->disallowBackpress:Z
+ 
+-    #invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
++    if-eqz v0, :cond_18
+ 
+-    #move-result-object v0
++    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+ 
+-    #const-string v1, "activity"
++    move-result-object v0
+ 
+-   # invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
++    const-string v1, "activity"
+ 
+-    #move-result-object v0
++    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+ 
+-#    check-cast v0, Landroid/app/ActivityManager;
++    move-result-object v0
+ 
+- #   invoke-virtual {p0}, Landroid/app/Activity;->getTaskId()I
++    check-cast v0, Landroid/app/ActivityManager;
+ 
+-    #move-result v1
++    invoke-virtual {p0}, Landroid/app/Activity;->getTaskId()I
+ 
+-    #const/4 v2, 0x0
++    move-result v1
++
++    const/4 v2, 0x0
+ 
+-    #invoke-virtual {v0, v1, v2}, Landroid/app/ActivityManager;->moveTaskToFront(II)V
++    invoke-virtual {v0, v1, v2}, Landroid/app/ActivityManager;->moveTaskToFront(II)V
+ 
+     :cond_18
+     invoke-super {p0}, Landroid/app/Activity;->onUserLeaveHint()V
+diff --color -ur classes/net/openvpn/openvpn/OpenVPNClientBase.smali classes-org/net/openvpn/openvpn/OpenVPNClientBase.smali
+--- classes/net/openvpn/openvpn/OpenVPNClientBase.smali	2023-04-16 21:30:48.656406222 +0530
++++ classes-org/net/openvpn/openvpn/OpenVPNClientBase.smali	2023-04-18 22:42:55.051110897 +0530
+@@ -17,9 +17,9 @@
+ # static fields
+ .field private static final TAG:Ljava/lang/String; = "OpenVPNClientBase"
+ 
+-.field public static final themeResId:I
++.field public static final themeResId:I = 0x0
+ 
+-.field public static final themeSet:Z
++.field public static final themeSet:Z = false
+ 
+ 
+ # instance fields
+diff --color -ur classes/org/conscrypt/ConscryptFileDescriptorSocket.smali classes-org/org/conscrypt/ConscryptFileDescriptorSocket.smali
+--- classes/org/conscrypt/ConscryptFileDescriptorSocket.smali	2023-04-16 21:30:48.676406220 +0530
++++ classes-org/org/conscrypt/ConscryptFileDescriptorSocket.smali	2023-04-18 22:42:55.111110890 +0530
+@@ -18,7 +18,7 @@
+ 
+ 
+ # static fields
+-.field private static final DBG_STATE:Z
++.field private static final DBG_STATE:Z = false
+ 
+ 
+ # instance fields
