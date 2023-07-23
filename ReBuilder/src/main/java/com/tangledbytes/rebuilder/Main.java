@@ -124,7 +124,7 @@ public class Main {
 		if(additionalFiles != null)
 			shell.addFiles(additionalFiles).execute();
 		if(!doNotSignApk) {
-			if(signAllApps)
+			if(signAllApps && splitApps != null)
 				shell.signAllApps(keystore, keystorePassword, splitApps).execute();
 			else
 				shell.signOriginalApp(keystore, keystorePassword).execute();

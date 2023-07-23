@@ -95,14 +95,16 @@ public class Shell {
 		return this;
 	}
 
-	public Shell installApps(boolean installOnEmulator, File[] companionApps) {
+	public Shell installApps(boolean installOnEmulator, File[] splitApps) {
 		List<String> installCommand = new ArrayList<>();
 		// TODO: Handle multiple devices
 		String target = installOnEmulator ? "-e" : "-d";
 		StringBuilder command = new StringBuilder();
 		command.append(String.format("adb %s install-multiple -r %s", target, signedApk));
-		for (File companionApp : companionApps)
-			command.append(" ").append(companionApp);
+		if(splitApps != null) {
+			for (File companionApp : splitApps)
+				command.append(" ").append(companionApp);
+		}
 		installCommand.add(command.toString());
 		commands.add(installCommand);
 		return this;
