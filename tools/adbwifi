@@ -1,0 +1,9 @@
+echo Disconnecting previously connected devices...\
+    && adb disconnect > /dev/null \
+    && adb tcpip 5555 > /dev/null \
+    && echo Getting IP...\
+    && sleep 2 \
+    && IP_ADDR=$(adb shell ip addr show 2> /dev/null | grep "inet .* scope global" | grep -o '[0-9]\{3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' | head -1) \
+    && adb connect $IP_ADDR > /dev/null \
+	&& echo Successfully connected, you can unplug your device now. \
+	|| echo Please retry...

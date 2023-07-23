@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [[ $# == 0 ]]; then
+	echo "Usage: java2smali INPUT_FILE"
+fi
+
+rm -rf .tmp
+mkdir .tmp
+javac --class-path /opt/bin/android/platforms/android-33/android.jar -d .tmp $@ || exit -1
+cd .tmp 
+
+dex=""
+for i in $(find . -name "*.class")
+do
+	dex=$dex" "$i
+done
+
+d8 --debug $dex || exit -1
+baksmali d classes.dex
+cp out/* ../ -r 
+cd .. 
+rm -rf .tmp
